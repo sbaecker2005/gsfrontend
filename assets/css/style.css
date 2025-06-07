@@ -1,0 +1,41 @@
+
+body {
+  background: linear-gradient(to bottom right, #e0f2fe, #bae6fd);
+  color: #1e293b;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+section {
+  transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+  box-shadow: 0 0 30px rgba(30, 64, 175, 0.25);
+  transform: scale(1.01);
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
+}
+
+footer a:hover {
+  color: #93c5fd;
+}
+
+.img-helicoptero {
+  width: 8rem; 
+  height: 8rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  border: 2px solid #93c5fd; 
+}

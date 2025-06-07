@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Climate Simulator – IA para Cidades Inteligentes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-100 to-blue-300 text-gray-800 font-sans">
+  <header class="bg-blue-900 text-white text-center py-8 shadow-lg">
+    <h1 class="text-4xl font-extrabold">🌎 Climate Simulator</h1>
+    <p class="text-lg mt-2">Prever para proteger. Simular para salvar.</p>
+  </header>
+
+  <main class="p-6 max-w-5xl mx-auto space-y-12">
+
+    <section class="bg-white p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center gap-6">
+      <img src="assets/img/Helicoptero.jpg" alt="Helicóptero em resgate" 
+           class="w-32 h-32 rounded-full object-cover shadow-lg border-2 border-blue-300" />
+      <div>
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">💥 A Tempestade Não Avisou</h2>
+        <p class="mb-4">
+          Em 2024, o Brasil chorou por Rio Grande do Sul. Cidades submersas. Famílias separadas. Vidas levadas pela água.
+          Antes disso, foi Brumadinho, em 2019 — um deslizamento tóxico que virou símbolo da dor silenciosa que nasce quando o alerta chega tarde demais.
+        </p>
+        <p>
+          Mas a natureza não é imprevisível. Nós é que, muitas vezes, escolhemos não ouvir.
+        </p>
+      </div>
+    </section>
+<section class="bg-white p-6 rounded-lg shadow-md">
+  <h2 class="text-3xl font-bold text-blue-800 mb-4">💡 E Se Pudéssemos Prever?</h2>
+  <p>
+    E se houvesse uma forma de estimar, com base em dados reais, o risco de enchentes urbanas?
+    E se, com alguns cliques, um gestor público, um morador ou um estudante pudesse prever o perigo e agir com antecedência?
+  </p>
+  <p class="mt-4">
+    Foi com essa inquietação que nasceu o <strong>Climate Simulator</strong> — um projeto inspirado na dor, guiado pela tecnologia e movido por propósito.
+  </p>
+  <p class="mt-4">
+    No produto final, utilizamos <strong>Inteligência Artificial</strong> para analisar dados como volume de chuva, infraestrutura, relevo e localização urbana. Com base nesses dados, a IA é capaz de <strong>prever cenários de risco de enchente</strong>, auxiliando na tomada de decisões mais rápidas e precisas.
+  </p>
+  <p class="mt-2 text-sm italic text-gray-500">
+    *Este protótipo demonstra a lógica inicial. A versão completa, com IA treinada, está em desenvolvimento.
+  </p>
+</section>
+
+    <section class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4">🧠 Como Funciona</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Porte da cidade (grande, média, pequena)</li>
+        <li>Nível de infraestrutura urbana</li>
+        <li>Topografia (plana, ondulada, montanhosa)</li>
+        <li>Presença de corpos hídricos próximos</li>
+        <li>Volume de chuva (mm)</li>
+      </ul>
+      <p class="mt-4 text-sm italic text-gray-500">*Esta versão é apenas um protótipo educativo. A IA real está em desenvolvimento.</p>
+    </section>
+
+    <section class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4">🧪 Simule um Cenário</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+        <select id="cidade" class="p-3 rounded border border-gray-300">
+          <option value="">Selecione a cidade</option>
+          <option>São Paulo</option>
+          <option>Rio de Janeiro</option>
+          <option>Belo Horizonte</option>
+          <option>Campinas</option>
+          <option>Santos</option>
+          <option>Joinville</option>
+          <option>Petrolina</option>
+          <option>Marabá</option>
+        </select>
+
+        <select id="infraestrutura" class="p-3 rounded border border-gray-300">
+          <option value="">Infraestrutura urbana</option>
+          <option value="baixa">Baixa</option>
+          <option value="média">Média</option>
+          <option value="alta">Alta</option>
+        </select>
+
+        <input type="number" id="chuva" placeholder="Chuva (mm)" class="p-3 rounded border border-gray-300" />
+
+        <select id="topografia" class="p-3 rounded border border-gray-300">
+          <option value="">Topografia</option>
+          <option value="plana">Plana</option>
+          <option value="ondulada">Ondulada</option>
+          <option value="montanhosa">Montanhosa</option>
+        </select>
+
+        <select id="corpoHidrico" class="p-3 rounded border border-gray-300">
+          <option value="">Corpo hídrico próximo?</option>
+          <option value="sim">Sim</option>
+          <option value="não">Não</option>
+        </select>
+      </div>
+
+      <button onclick="simular()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
+        Simular Risco
+      </button>
+
+      <div id="resultado" class="mt-6 text-lg font-medium text-blue-800"></div>
+    </section>
+
+  </main>
+
+  <footer class="bg-blue-900 text-white text-center py-6 mt-12">
+    <p>Desenvolvido por Samuel Dvavid Baecker – RM 559269 | FIAP 2025</p>
+    <a href="#" target="_blank" class="underline">🔗 Ver Projeto no GitHub</a>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
